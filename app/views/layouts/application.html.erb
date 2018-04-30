@@ -11,6 +11,13 @@
   <body>
     <p align= center><%= image_tag 'zoo_blog.gif' %></p>
 
+    <% flash.each do |name, msg| %>
+      <ul>
+        <li><%= msg %></li>
+      </ul>
+
+    <% end %>
+
     <%= yield %>
   </body>
 </html>
