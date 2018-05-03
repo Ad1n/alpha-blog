@@ -9,9 +9,12 @@
   </head>
 
   <body>
-    <p align= center><%= image_tag 'zoo_blog.gif' %></p>
-
+    <%= render 'layouts/navigation' %>
     <%= render 'layouts/messages' %>
+    <div class="container">
     <%= yield %>
+    </div>
+    <p align= center><%= image_tag 'zoo_blog.gif' %></p>
+    <%= render 'layouts/footer' %>
   </body>
 </html>
